@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     port: 5173,
   },
+  base: '/', // Set the base public path
   build: {
     rollupOptions: {
       input: 'public/index.html', // Specify the entry point
