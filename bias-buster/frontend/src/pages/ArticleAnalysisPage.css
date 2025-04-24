@@ -1,0 +1,109 @@
+.analysis-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f8f9fa; /* Light gray background */
+  min-height: 100vh;
+}
+
+.analysis-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  margin-bottom: 2.5rem;
+  width: 90%;
+  max-width: 1000px; /* Increased max-width */
+}
+
+.analysis-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #343a40; /* Dark gray heading */
+  margin-bottom: 2rem;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.analysis-input {
+  padding: 1.5rem;
+  border: 1px solid #ced4da; /* Lighter border */
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  font-family: 'Roboto', sans-serif;
+  resize: vertical;
+}
+
+.analyze-btn {
+  background-color: #7950f2; /* Primary purple */
+  color: white;
+  padding: 1.4rem 3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.analyze-btn:hover {
+  background-color: #5e35b1; /* Darker purple on hover */
+  transform: scale(1.03); /* Slight scale up on hover */
+}
+
+.output-area {
+  background-color: #f8f9fa; /* Light gray output area */
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  text-align: left;
+  width: 100%;
+  border: 1px solid #dee2e6; /* Lighter border */
+}
+
+.output-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #343a40; /* Dark gray output title */
+}
+
+.loading-indicator {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #6c757d; /* Medium gray loading text */
+}
+
+.error-message {
+  color: #dc3545; /* Bootstrap's red */
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.empty-message {
+  color: #6c757d; /* Medium gray empty message */
+  font-size: 1.15rem;
+}
+
+/* Side-by-side comparison */
+.analysis-page-container div[style*="display: flex"] {
+  margin-bottom: 2rem;
+}
+
+.analysis-page-container div[style*="display: flex"] div {
+  padding: 1.5rem;
+  border: 1px solid #dee2e6; /* Lighter border */
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 350px; /* Adjust as needed */
+}
