@@ -8,8 +8,6 @@ export default defineConfig({
   },
   base: '/', // Set the base public path
   build: {
-    rollupOptions: {
-      input: 'public/index.html', // Specify the entry point
-    },
+    outDir: 'dist', // Explicitly set the output directory
   },
 });
